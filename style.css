@@ -15,7 +15,8 @@ header {
   padding: 26px;
   display: flex;
   justify-content: space-evenly;
-  position: sticky;
+  position: fixed;
+  width: 100%;
 }
 header img {
   position: relative;
@@ -88,7 +89,8 @@ article .show_origin .bottom_text h2 {
   color: white;
   font-weight: bold;
   font-family: "Heebo", sans-serif;
-  font-size: 30px;
+  font-size: 26px;
+  letter-spacing: 2px;
 }
 article .show_origin .bottom_text button[type="button"] {
   padding: 10px;
@@ -177,17 +179,17 @@ article .cards_part .cards_text p:hover {
   text-decoration: underline;
 }
 article .cards_part .cards_text a {
+  color: skyblue;
   padding: 20px;
 }
 article .cards_part .cards_text .read_link {
   position: relative;
-  top: 46px;
+  top: 48px;
 }
 /*cards_part END*/
 
 /*footer START*/
 footer {
-  height: 50px;
   background-color: black;
   color: white;
   display: flex;
@@ -196,7 +198,7 @@ footer {
 footer img {
   height: 20px;
   position: relative;
-  top: 13px;
+  top: 12px;
 }
 footer nav ul .twi {
   border-left: 1px solid grey;
