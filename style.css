@@ -1,0 +1,218 @@
+/*make padding,margin 0 and give borderbox as box-sizing START*/
+*,
+html,
+*:after,
+*:before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/*make padding,margin 0 and give borderbox as box-sizing END*/
+
+/*navbar START*/
+header {
+  background-color: black;
+  padding: 26px;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+}
+header img {
+  position: relative;
+  top: 0px;
+  transform: translate(30%, -30%);
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  display: flex;
+  float: left;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0px 5px;
+}
+nav .white li a {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+nav .grey li a {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 3.5px;
+  text-decoration: none;
+}
+nav .white li a:hover,
+footer nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+nav .grey li a:hover {
+  border-bottom: 2px solid #555;
+}
+/*navbar END*/
+
+/*showcase START*/
+article .showcase {
+  background-image: url("https://res.cloudinary.com/webcraze-jan/image/upload/v1566305999/pexels-photo-700015.jpg");
+  height: 560px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+article .showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+article .show_origin {
+  background-color: #555;
+  height: 164px;
+  background-color: rgba(122, 122, 122, 0.5);
+}
+article .show_origin .bottom_text {
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 1; /*not working*/
+  padding: 39px;
+}
+article .show_origin .bottom_text h2 {
+  opacity: 1;
+  color: white;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  font-size: 30px;
+}
+article .show_origin .bottom_text button[type="button"] {
+  padding: 10px;
+  width: 200px;
+  position: relative;
+  left: 100px;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+article .show_origin .bottom_text button[type="button"]:hover {
+  border: 2px solid orange;
+}
+article .show_origin .bottom_button ul {
+  display: flex;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: black;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+article .show_origin .bottom_button ul li {
+  text-align: center;
+  position: relative;
+  left: 230px;
+  width: 300px;
+  font-family: "Heebo", sans-serif;
+  background-color: black;
+  padding: 15px;
+  border-right: 0.5px solid#555;
+  border-left: 0.5px solid#555;
+}
+article .show_origin .bottom_button ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+article .show_origin .bottom_button ul li:hover {
+  background-color: rgba(214, 211, 211, 0.2);
+}
+article .show_origin .bottom_button #numberz {
+  padding: 0px 10px 0px 10px;
+  color: #555;
+  font-weight: bold;
+}
+/*showcase END*/
+
+/*cards_part START*/
+article .cards_part {
+  height: 730px;
+}
+article .cards_part h2 {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 17px;
+  color: grey;
+  font-family: "Heebo", sans-serif;
+}
+article .cards_part .cards_container {
+  height: 560px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 90px;
+}
+article .cards_part .cards_container .cards {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin: 5px;
+}
+article .cards_part .cards img {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+article .cards_part .cards_text p {
+  padding: 20px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+article .cards_part .cards_text p:hover {
+  text-decoration: underline;
+}
+article .cards_part .cards_text a {
+  padding: 20px;
+}
+article .cards_part .cards_text .read_link {
+  position: relative;
+  top: 46px;
+}
+/*cards_part END*/
+
+/*footer START*/
+footer {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer img {
+  height: 20px;
+  position: relative;
+  top: 13px;
+}
+footer nav ul .twi {
+  border-left: 1px solid grey;
+}
+footer nav {
+  position: relative;
+  top: 17px;
+  left: -130px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+footer p {
+  position: relative;
+  top: 20px;
+  left: -30px;
+  font-size: 13px;
+  color: grey;
+}
+/*footer END*/
